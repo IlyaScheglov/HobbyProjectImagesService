@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ImagesService
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 15MB
+      max-request-size: 15MB
+  transaction:
+    default-timeout: 5
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/imageservice
+    username: postgres
+    password: admin759
+
+minio:
+  endpoint: http://127.0.0.1:9000
+  accessKey: admin
+  secretKey: admin759
+  bucket-name: hobby-images
+
+server:
+  port: 8083
