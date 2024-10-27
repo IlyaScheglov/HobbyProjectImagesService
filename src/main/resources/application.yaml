@@ -13,12 +13,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/imageservice
     username: postgres
     password: admin759
-
-minio:
-  endpoint: http://127.0.0.1:9000
-  accessKey: admin
-  secretKey: admin759
-  bucket-name: hobby-images
+  minio:
+    minio-url: http://127.0.0.1:9000
+    login-key: admin
+    password-key: admin759
+    bucket-name: hobby-images
 
 server:
   port: 8083
